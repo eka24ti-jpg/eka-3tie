@@ -1,10 +1,10 @@
-package com.example.syifa_3tie.pertemuan_6
+package com.example.syifa_3tie.Home.pertemuan_6
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.example.syifa_3tie.MainActivity
+import com.example.syifa_3tie.BaseActivity // 1. Import BaseActivity
 import com.example.syifa_3tie.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -26,10 +26,10 @@ class SplashScreenActivity : AppCompatActivity() {
             val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
             val isLogin = sharedPref.getBoolean("isLogin", false)
 
-            // Percabangan sesuai alur poin 4
+            // Percabangan alur
             if (isLogin) {
-                // Jika isLogin true -> Arahkan ke MainActivity
-                val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
+                // 2. Jika isLogin true -> Arahkan ke BaseActivity (menggantikan MainActivity)
+                val intent = Intent(this@SplashScreenActivity, BaseActivity::class.java)
                 startActivity(intent)
             } else {
                 // Jika isLogin false -> Arahkan ke AuthActivity
@@ -37,7 +37,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
-            finish() // Tutup SplashScreenActivity agar user tidak bisa klik tombol back balik ke sini
+            finish() // Tutup SplashScreenActivity
         }
     }
 }

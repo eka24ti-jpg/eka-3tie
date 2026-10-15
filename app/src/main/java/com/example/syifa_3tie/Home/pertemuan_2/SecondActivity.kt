@@ -1,4 +1,4 @@
-package com.example.syifa_3tie.pertemuan_2
+package com.example.syifa_3tie.Home.pertemuan_2
 
 import android.os.Bundle
 import android.util.Log

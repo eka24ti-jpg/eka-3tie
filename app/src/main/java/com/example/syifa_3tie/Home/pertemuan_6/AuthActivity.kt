@@ -1,10 +1,10 @@
-package com.example.syifa_3tie.pertemuan_6
+package com.example.syifa_3tie.Home.pertemuan_6
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.syifa_3tie.MainActivity
+import com.example.syifa_3tie.BaseActivity // 1. Import BaseActivity
 import com.example.syifa_3tie.databinding.ActivityAuthBinding
 
 class AuthActivity : AppCompatActivity() {
@@ -34,8 +34,8 @@ class AuthActivity : AppCompatActivity() {
                 editor.putString("username", username)
                 editor.apply()
 
-                // Berpindah ke MainActivity
-                val intent = Intent(this, MainActivity::class.java)
+                // 2. Berpindah ke BaseActivity (menggantikan MainActivity)
+                val intent = Intent(this, BaseActivity::class.java)
                 startActivity(intent)
                 finish() // Menutup AuthActivity
             } else {

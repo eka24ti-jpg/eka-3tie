@@ -1,4 +1,4 @@
-package com.example.syifa_3tie.pertemuan_4
+package com.example.syifa_3tie.Home.pertemuan_4
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,10 +8,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.syifa_3tie.MainActivity
 import com.example.syifa_3tie.R
 import com.example.syifa_3tie.databinding.ActivityFourthBinding
-import com.example.syifa_3tie.databinding.ActivityMainBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
