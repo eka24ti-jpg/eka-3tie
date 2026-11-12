@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "syifa-3tie"
+rootProject.name = "eka-3tie"
 include(":app")
